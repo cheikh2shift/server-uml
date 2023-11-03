@@ -1,6 +1,6 @@
 # samb
 
-`samb` offers a structured language to define RESTful HTTP APIs. `samb` provides syntax support for languages similar to those used to write infrastructure as code. It offers a language that ChatGPT can interprete to write actual server code in any language.
+`samb` offers a structured language to define RESTful HTTP APIs. `samb` provides syntax support for languages similar to those used to write infrastructure as code. It offers a language that ChatGPT can interprete to write actual server code, with any framework.
 
 Once you finish writing your code, you may then, deploy your project to your cloud provider of choice. 
 
