@@ -1,45 +1,13 @@
 # samb
 
-[![Build Status](https://travis-ci.org/cheikhshift/samb.svg?branch=master)](https://travis-ci.org/cheikhshift/samb) [![GoDoc](https://godoc.org/github.com/cheikhshift/samb?status.svg)](https://godoc.org/github.com/cheikhshift/samb) [![Go Report Card](https://goreportcard.com/badge/github.com/cheikhshift/samb)](https://goreportcard.com/report/github.com/cheikhshift/samb) [![Maintainability](https://api.codeclimate.com/v1/badges/062da952018e56ea46d5/maintainability)](https://codeclimate.com/github/cheikhshift/samb/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/062da952018e56ea46d5/test_coverage)](https://codeclimate.com/github/cheikhshift/samb/test_coverage)
-
-`samb` offers a structured language to build RESTful HTTP APIs. `samb` provides syntax support for languages similar to those used to write infrastructure as code. It offers:
-
-- A simple way to inject variables in request scope.
-- Nest API routes without long path prefixes.
-- Catch request runtime panics. 
-- Generate Go code following guidelines.
-- A tested library to use `samb` as you wish.
+`samb` offers a structured language to define RESTful HTTP APIs. `samb` provides syntax support for languages similar to those used to write infrastructure as code. It offers a language that ChatGPT can interprete to write actual server code in any language.
 
 Once you finish writing your code, you may then, deploy your project to your cloud provider of choice. 
 
-### Editor Plugins :
-
-- [VScode](https://marketplace.visualstudio.com/items?itemName=GopherSauce.samb)
-- [Sublime 3](https://packagecontrol.io/packages/SAMB)
 
 ### Documentation
 Learn more about `samb` code generation : [here](https://github.com/cheikhshift/samb/wiki). Scroll down to find more samples.
 
-
-## Install
-
-#### Requirements
-
-- `samb` requires Go +v1.8
-- [dep](https://github.com/golang/dep) (Dependency management)
-- `$GOPATH` environment variable set.
-
-```
-go get github.com/cheikhshift/samb/cmd/samb-cl
-```
-
-## Starting a project
-Create a new directory, then run the following command.
-
-
-	samb-cl -new -project=<NEW DIR PATH> <PACKAGE GO IMPORT PATH>
-
-The command will add files in the new folder. Have a look at the files generated to give you an idea on how `samb` directives work. Some directives have comments further explaining their functionality.
 
 ## Transpiling
 Run the following command to convert your directives into Go code.
@@ -60,35 +28,7 @@ The following package is used to parse YAML : [gopkg.in/yaml.v2](https://gopkg.i
 
 -----
 
-#### Tooling
-
-Here is a list of tools that generate Go code for your SAMB projects.
-
-samb-handler : Generate Go HTTP handlers with the specified parameters.
-
-- Install : `go get github.com/cheikhshift/samb/cmd/samb-handler`
-- Help : Run `samb-handler -h`
-
-samb-provide: Generate and add a provider to your project. This will generate the Go source used with your provider as well.
-
-- Install : `go get github.com/cheikhshift/samb/cmd/samb-provide`
-- Help : Run `samb-provide -h`
-
-samb-medic : Generate recover directive functions for your project.
-	
-- Install : `go get github.com/cheikhshift/samb/cmd/samb-medic`
-- Help : Run `samb-medic -h`
-
-
-## Todo
-
-- [x] Provide better documentation. Checkout the [wiki](https://github.com/cheikhshift/samb/wiki).
-- [x] Sublime/VSCode text plugins.
-- [x] Write package tests.
-- [ ] Write tutorials/ guides.
-- [x] A command line to help with adding new handler source.
-- [x] Implement direct deployment to GCP App engine.
-
+Checkout the [wiki](https://github.com/cheikhshift/samb/wiki).
 
 ### Samples
 
